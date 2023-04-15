@@ -2,18 +2,17 @@ function createHeader() {
     const header = document.createElement("header");
     header.setAttribute("id","header");
 
-    createHeaderChild("Home");
-    createHeaderChild("About");
-    createHeaderChild("Ice-creams");
-    createHeaderChild("Hours");
-    createHeaderChild("Contacts");
+    header.appendChild(createHeaderChild("Home"));
+    header.appendChild(createHeaderChild("About"));
+    header.appendChild(createHeaderChild("Ice-creams"));
+    header.appendChild(createHeaderChild("Hours"));
+    header.appendChild(createHeaderChild("Contacts"));
 
     return header;
 }
 
 function createHeaderChild(text) {
     const headerChild = document.createElement("div")
-    header.appendChild(headerChild);
     headerChild.textContent = text
 
     return headerChild;

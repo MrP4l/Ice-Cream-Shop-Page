@@ -1,19 +1,19 @@
 function createContent() {
     const content = document.createElement("contentContainer");
-    header.setAttribute("id","contentContainer");
+    content.setAttribute("id","contentContainer");
 
-    createContentChild(homeContainer);
-    createContentChild(aboutContainer);
-    createContentChild(menuContainer);
-    createContentChild(hoursContainer);
-    createContentChild(contactsContainer);
+    content.appendChild(createContentChild("homeContainer"));
+    content.appendChild(createContentChild("aboutContainer"));
+    content.appendChild(createContentChild("menuContainer"));
+    content.appendChild(createContentChild("hoursContainer"));
+    content.appendChild(createContentChild("contactsContainer"));
 
     return content;
 }
 
 function createContentChild(id) {
     const contentChild = document.createElement("div")
-    content.appendChild(contentChild);
+    //content.appendChild(contentChild);
     contentChild.setAttribute("id", id);
 
 //Add all the sub children
@@ -24,3 +24,5 @@ function appendContent() {
     const mainContainer = document.getElementById("mainContainer");
     mainContainer.appendChild(createContent());
 }
+
+export default appendContent;
