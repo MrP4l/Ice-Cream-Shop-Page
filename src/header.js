@@ -4,8 +4,8 @@ function createHeader() {
 
     header.appendChild(createHeaderChild("Home"));
     header.appendChild(createHeaderChild("About"));
-    header.appendChild(createHeaderChild("Ice-creams"));
-    header.appendChild(createHeaderChild("Hours"));
+    header.appendChild(createHeaderChild("Flavors"));
+    header.appendChild(createHeaderChild("Opening Hours"));
     header.appendChild(createHeaderChild("Contacts"));
 
     return header;
