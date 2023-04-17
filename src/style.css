@@ -5,7 +5,8 @@ html {
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Sweet Sans Pro Web";
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 ::-webkit-scrollbar {
@@ -23,12 +24,14 @@ html {
 
 #header {
     border: solid;
-    background-color: #fae8ff;
+    background-color: black;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 10%;
     width: 100%;
+    font-weight: 100;
 }
 
 #header > div {
@@ -47,18 +50,48 @@ html {
 
 #homeContainer {
     border: orange solid;
-    background-color: #fae8ff;
+    background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
     width: 100%;
 }
 
-#homeContainer > h1 {
+#homeContainer > div {
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
-    margin-top: 17%;
-    padding: 15px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#homeContainer > div > h1 {
+    color: #f472b6;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     font-size: 5em;
+    margin-bottom: 8%;
+    font-weight: 400;
+}
+
+#homeContainer > div > p {
+    color: white;
+    height: fit-content;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: 100;
 }
 
 #aboutContainer {
@@ -66,18 +99,39 @@ html {
     background-color: bisque;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100%;
 }
 
-#aboutContainer > p {
-    border: solid;
+#aboutContainer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: fit-content;
-    width: 40%;
-    padding: 15px;
+    margin-top: 8%;
+}
+
+#aboutContainer > div > h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
     font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+#aboutContainer > div > p {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    width: 30%;    
+    font-size: 1.5em;
     text-align: center;
+    word-spacing: 5px;
+    font-weight: 200;
 }
 
 #menuContainer {
@@ -90,38 +144,55 @@ html {
 }
 
 #menuContainer > div {
-    border: solid;
     display: flex;
     flex-wrap: wrap;
-    height: 50%;
     width: 100%;
     justify-content: center;
+}
+
+#titleRow {
+    height: clamp(10%, 20%, 20%);
+    width: 100%;
+    font-size: clamp(10px, 2em, 2em);
+    font-weight: 300;
+    text-align: center;
     align-items: center;
 }
 
+#secondRow {
+    height: clamp(50%, 80%, 80%);
+}
+
 #menuContainer > div > div {
-    border: solid yellow;
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
-    width: 20%;
+    height: clamp(50px, 30%, 30%);
+    width: clamp(200px, 15%, 20%);
     margin: 1%;
 }
 
 #menuContainer > div > div > h2 {
-    border: solid;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 15%;
     width: 100%;
+    word-spacing: 5px;
+    font-weight: 250;
+    margin-bottom: 5%;
+    font-size: clamp(5px, 1.5em, 2em);
 }
 
-#menuContainer > div > div > p{
-    border: solid;
+#menuContainer > div > div > p {
+    display: flex;
+    flex-wrap: wrap;
     height: 85%;
     width: 100%;
     text-align: center;
+    word-spacing: 5px;
+    font-weight: 150;
+    font-size: clamp(1px, 1em, 1em);
 }
 
 #hoursContainer {

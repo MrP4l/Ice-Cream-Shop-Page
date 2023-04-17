@@ -8,22 +8,35 @@ function createContent() {
     const hoursContainer = content.appendChild(createTypeElementWithId("div", "hoursContainer"));
     const contactsContainer = content.appendChild(createTypeElementWithId("div", "contactsContainer"));
 
+    const textContainer = createTypeElementWithId("div", "textContainer");
+    homeContainer.appendChild(textContainer);
     const shopName = createTypeElementWithId("h1", "shopName");
-    shopName.textContent = "Gelateria FraMa";
-    homeContainer.appendChild(shopName);
+    shopName.textContent = "FraMa";
+    textContainer.appendChild(shopName);
+    const shopDesc = createTypeElementWithId("p", "shopDesc")
+    shopDesc.textContent = "A little tradition, a pinch of love and a drop of innovation " + 
+                            "that will never make you forget our ice cream";
+    textContainer.appendChild(shopDesc);
     
+    const aboutSubContainer = createTypeElementWithId("div", "aboutSubContainer");
+    aboutContainer.appendChild(aboutSubContainer);
+    const aboutTitle = createTypeElementWithId("h2", "aboutTitle");
+    aboutTitle.textContent = "About us";
+    aboutSubContainer.appendChild(aboutTitle);
     const aboutUs = createTypeElementWithId("p", "aboutUs");
     aboutUs.textContent = "From an ancient fourth generation family of ice cream makers from Germany " + 
                         "who settled first in Zoldo Alto and then in Ancona, owners of the historic " + 
                         "and oldest ice cream shop in Ancona. Come and try our ice cream that mixes " + 
                         "tradition and modernity, bringing innovation to the cone every year."
-    aboutContainer.appendChild(aboutUs);
-
-    const firstRowMenuContainer = createTypeElementWithId("div", "firstRow");
+    aboutSubContainer.appendChild(aboutUs);
+ 
+    const titleRow = createTypeElementWithId("div", "titleRow");
+    titleRow.textContent = "(some of) The Ice Creams"
+    //const firstRowMenuContainer = createTypeElementWithId("div", "firstRow");
     const secondRowMenuContainer = createTypeElementWithId("div", "secondRow");
-    menuContainer.appendChild(firstRowMenuContainer);
+    menuContainer.appendChild(titleRow);
+    //menuContainer.appendChild(firstRowMenuContainer);
     menuContainer.appendChild(secondRowMenuContainer);
-
     const flavorsArray = ["Stracciatella", "Cioccolato", "Limone", "Pino Pinguino", "Pura Vida", "La Bella Siciliana",
                     "Ciak Si Gira", "Etna"];
     const descrArray = ["Stracciatella is a flavor of ice cream based on milk and cream with dark chocolate, born in Bergamo.",
@@ -33,18 +46,16 @@ function createContent() {
                         "Pumpkin seed ice cream with a blueberry variegate.",
                         "Ricotta-based ice cream with pistachio wafer variegate and lemon biscuits.",
                         "Ciak Si Gira ice cream is a fiordipanna with caramelized popcorn.",
-                        "Etna ice cream is a salted pistachio variegated with almonds."]
-    
-
+                        "Etna ice cream is a salted pistachio variegated with almonds."];
     for (let i = 0; i < 8; i++) {
         const div = document.createElement("div");
         div.setAttribute("id", "card" + i);
-        if (i < 4) {
-            firstRowMenuContainer.appendChild(div);
-        }
-        else {
+        //if (i < 4) {
+        //    firstRowMenuContainer.appendChild(div);
+        //}
+        //else {
             secondRowMenuContainer.appendChild(div);
-        }
+        //}
         const titles = document.createElement("h2");
         div.appendChild(titles);
         const descr = document.createElement("p");
@@ -53,6 +64,7 @@ function createContent() {
         descr.textContent = descrArray[i];
     }
 
+    //Make a container for a section title h1/div and openingHoursContainer
     const hoursArray = ["Opening Hours | March - October", "Monday 14.00 - 24.00", "Tuesday 14.00 - 24.00", 
                     "Wednesday 14.00 - 24.00", "Thursday 14.00 - 24.00", "Friday 14.00 - 24.00", "Saturday 12.00 - 24.00",
                     "Sunday 12.00 - 24.00"]
@@ -65,6 +77,7 @@ function createContent() {
         div.textContent = hoursArray[i];
     }
 
+    //Make a container for a section title h1/div and contacts
     const contactsArray = ["Contact us or come and see us! - Ancona, Via FraMa 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"]
     const contacts = document.createElement("div");
     contactsContainer.appendChild(contacts);
