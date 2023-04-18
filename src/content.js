@@ -1,6 +1,17 @@
+import firstImage from './images/katie-smetherman-firstimg.jpg';
 function createContent() {
     const content = document.createElement("div");
     content.setAttribute("id","contentContainer");
+
+    const firstParallax = document.createElement("div");
+    firstParallax.setAttribute("id", "firstParallax");
+    content.appendChild(firstParallax);
+    const firstImg = new Image();
+    firstImg.src = firstImage;
+    firstParallax.appendChild(firstImg);
+
+ 
+
 
     const homeContainer = content.appendChild(createTypeElementWithId("div", "homeContainer"));
     const aboutContainer = content.appendChild(createTypeElementWithId("div", "aboutContainer"));
@@ -40,9 +51,9 @@ function createContent() {
     const flavorsArray = ["Stracciatella", "Cioccolato", "Limone", "Pino Pinguino", "Pura Vida", "La Bella Siciliana",
                     "Ciak Si Gira", "Etna"];
     const descrArray = ["Stracciatella is a flavor of ice cream based on milk and cream with dark chocolate, born in Bergamo.",
-                        "Chocolate ice cream is one of the most appreciated flavors by those with a sweet tooth. With a creamy consistency and intense flavour, it goes perfectly with different flavors of ice cream.",
+                        "Chocolate ice cream is one of the most appreciated flavors by those with a sweet tooth. With a creamy consistency and intense flavour.",
                         "Lemon is a thirst-quenching and digestive flavour, which is why it is required all year round and goes easily with all fruit flavours. For the realization of the lemon flavor only natural and high quality products are used, such as the IGP Sorrento lemon.",
-                        "Unique and inimitable for its creaminess and ability to wrap the ice cream in a soft embrace with an intense chocolate and hazelnut flavour. Also ideal for creating delicious soft ice creams and for preparing exquisite drinks, both refreshing and hot.",
+                        "Unique and inimitable for its creaminess and ability to wrap the ice cream in a soft embrace with an intense chocolate and hazelnut flavour.",
                         "Pumpkin seed ice cream with a blueberry variegate.",
                         "Ricotta-based ice cream with pistachio wafer variegate and lemon biscuits.",
                         "Ciak Si Gira ice cream is a fiordipanna with caramelized popcorn.",

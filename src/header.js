@@ -2,11 +2,11 @@ function createHeader() {
     const header = document.createElement("header");
     header.setAttribute("id","header");
 
-    header.appendChild(createHeaderChild("Home"));
-    header.appendChild(createHeaderChild("About"));
-    header.appendChild(createHeaderChild("Flavors"));
-    header.appendChild(createHeaderChild("Opening Hours"));
-    header.appendChild(createHeaderChild("Contacts"));
+    header.appendChild(createHeaderChild("Home")).setAttribute("id", "home");
+    header.appendChild(createHeaderChild("About")).setAttribute("id", "about");
+    header.appendChild(createHeaderChild("Flavors")).setAttribute("id", "flavors");
+    header.appendChild(createHeaderChild("Opening Hours")).setAttribute("id", "openingHours");
+    header.appendChild(createHeaderChild("Contacts")).setAttribute("id", "contacts");
 
     return header;
 }
