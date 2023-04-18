@@ -68,8 +68,13 @@ function createContent() {
     const hoursArray = ["Opening Hours | March - October", "Monday 14.00 - 24.00", "Tuesday 14.00 - 24.00", 
                     "Wednesday 14.00 - 24.00", "Thursday 14.00 - 24.00", "Friday 14.00 - 24.00", "Saturday 12.00 - 24.00",
                     "Sunday 12.00 - 24.00"]
+    const hoursSubContainer = createTypeElementWithId("div", "hoursSubContainer");
+    const titleHourContainer = createTypeElementWithId("h2", "titleHourContainer");
+    titleHourContainer.textContent = "Opening Hours";
+    hoursSubContainer.appendChild(titleHourContainer);
     const openingHoursContainer = document.createElement("div");
-    hoursContainer.appendChild(openingHoursContainer);
+    hoursSubContainer.appendChild(openingHoursContainer);
+    hoursContainer.appendChild(hoursSubContainer);
     for (let i = 0; i < 8; i++) {
         const div = document.createElement("p");
         div.setAttribute("id", "row" + i);
@@ -78,9 +83,14 @@ function createContent() {
     }
 
     //Make a container for a section title h1/div and contacts
-    const contactsArray = ["Contact us or come and see us! - Ancona, Via FraMa 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"]
+    const contactsArray = ["Ancona, Via FraMa 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"];
+    const contactsSubContainer = createTypeElementWithId("div", "contactsSubContainer");
+    const titleContactContainer = createTypeElementWithId("h2", "titleContactContainer");
+    contactsSubContainer.appendChild(titleContactContainer);
+    titleContactContainer.textContent = "Contact Us";
+    contactsContainer.appendChild(contactsSubContainer);
     const contacts = document.createElement("div");
-    contactsContainer.appendChild(contacts);
+    contactsSubContainer.appendChild(contacts);
     for (let i = 0; i < 4; i++) {
         const div = document.createElement("p");
         div.setAttribute("id", "row" + i);
