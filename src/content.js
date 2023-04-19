@@ -2,22 +2,22 @@ import firstImage from './images/katie-smetherman-firstimg.jpg';
 function createContent() {
     const content = document.createElement("div");
     content.setAttribute("id","contentContainer");
-
-    const firstParallax = document.createElement("div");
-    firstParallax.setAttribute("id", "firstParallax");
-    content.appendChild(firstParallax);
-    const firstImg = new Image();
-    firstImg.src = firstImage;
-    firstParallax.appendChild(firstImg);
-
- 
-
-
+    
     const homeContainer = content.appendChild(createTypeElementWithId("div", "homeContainer"));
     const aboutContainer = content.appendChild(createTypeElementWithId("div", "aboutContainer"));
     const menuContainer = content.appendChild(createTypeElementWithId("div","menuContainer"));
     const hoursContainer = content.appendChild(createTypeElementWithId("div", "hoursContainer"));
     const contactsContainer = content.appendChild(createTypeElementWithId("div", "contactsContainer"));
+    
+    const firstImg = new Image();
+    firstImg.src = firstImage;
+    homeContainer.appendChild(firstImg);
+    
+    //homeContainer.setAttribute("class", "parallax");
+    //const parallaxContainer = createTypeElementWithId("div", "parallaxContainer");
+    //parallaxContainer.setAttribute("class", "parallax");
+    //homeContainer.appendChild(parallaxContainer);
+
 
     const textContainer = createTypeElementWithId("div", "textContainer");
     homeContainer.appendChild(textContainer);
@@ -28,6 +28,14 @@ function createContent() {
     shopDesc.textContent = "A little tradition, a pinch of love and a drop of innovation " + 
                             "that will never make you forget our ice cream";
     textContainer.appendChild(shopDesc);
+
+
+    window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        homeContainer.style.transform = `translateY(${scrolled * 0.4}px)`;
+      });
+
+
     
     const aboutSubContainer = createTypeElementWithId("div", "aboutSubContainer");
     aboutContainer.appendChild(aboutSubContainer);

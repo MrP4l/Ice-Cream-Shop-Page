@@ -47,31 +47,19 @@ html {
     width: 100vw;
 }
 
-#firstParallax {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#firstParallax > img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    object-position: center;
-    background-attachment: fixed;
-
-}
-
 #homeContainer {
     border: orange solid;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+}
+
+#homeContainer > img {
+    width: 100%;
+    height: 100%;
 }
 
 #homeContainer > div {
@@ -83,6 +71,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+    background-color: black;
 }
 
 #homeContainer > div > h1 {
