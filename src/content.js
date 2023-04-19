@@ -9,9 +9,9 @@ function createContent() {
     const hoursContainer = content.appendChild(createTypeElementWithId("div", "hoursContainer"));
     const contactsContainer = content.appendChild(createTypeElementWithId("div", "contactsContainer"));
     
-    const firstImg = new Image();
-    firstImg.src = firstImage;
-    homeContainer.appendChild(firstImg);
+    //const firstImg = new Image();
+    //firstImg.src = firstImage;
+    //homeContainer.appendChild(firstImg);
     
     //homeContainer.setAttribute("class", "parallax");
     //const parallaxContainer = createTypeElementWithId("div", "parallaxContainer");
@@ -30,10 +30,10 @@ function createContent() {
     textContainer.appendChild(shopDesc);
 
 
-    window.addEventListener("scroll", () => {
-        const scrolled = window.pageYOffset;
-        homeContainer.style.transform = `translateY(${scrolled * 0.4}px)`;
-      });
+    //window.addEventListener("scroll", () => {
+    //    const scrolled = window.scrollY;
+    //    textContainer.style.transform = `translateY(${scrolled * 0.4}px)`;
+    //  });
 
 
     
