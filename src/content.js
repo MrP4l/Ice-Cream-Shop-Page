@@ -1,4 +1,4 @@
-import firstImage from './images/katie-smetherman-firstimg.jpg';
+import firstImage from './images/erwan-hesry-secondimg.jpg';
 function createContent() {
     const content = document.createElement("div");
     content.setAttribute("id","contentContainer");
@@ -12,12 +12,6 @@ function createContent() {
     const firstImg = new Image();
     firstImg.src = firstImage;
     homeContainer.appendChild(firstImg);
-    
-    //homeContainer.setAttribute("class", "parallax");
-    //const parallaxContainer = createTypeElementWithId("div", "parallaxContainer");
-    //parallaxContainer.setAttribute("class", "parallax");
-    //homeContainer.appendChild(parallaxContainer);
-
 
     const textContainer = createTypeElementWithId("div", "textContainer");
     homeContainer.appendChild(textContainer);
@@ -28,14 +22,6 @@ function createContent() {
     shopDesc.textContent = "A little tradition, a pinch of love and a drop of innovation " + 
                             "that will never make you forget our ice cream";
     textContainer.appendChild(shopDesc);
-
-
-    //window.addEventListener("scroll", () => {
-    //    const scrolled = window.scrollY;
-    //    textContainer.style.transform = `translateY(${scrolled * 0.4}px)`;
-    //  });
-
-
     
     const aboutSubContainer = createTypeElementWithId("div", "aboutSubContainer");
     aboutContainer.appendChild(aboutSubContainer);
@@ -48,13 +34,11 @@ function createContent() {
                         "and oldest ice cream shop in Ancona. Come and try our ice cream that mixes " + 
                         "tradition and modernity, bringing innovation to the cone every year."
     aboutSubContainer.appendChild(aboutUs);
- 
+
     const titleRow = createTypeElementWithId("div", "titleRow");
     titleRow.textContent = "(some of) The Ice Creams"
-    //const firstRowMenuContainer = createTypeElementWithId("div", "firstRow");
     const secondRowMenuContainer = createTypeElementWithId("div", "secondRow");
     menuContainer.appendChild(titleRow);
-    //menuContainer.appendChild(firstRowMenuContainer);
     menuContainer.appendChild(secondRowMenuContainer);
     const flavorsArray = ["Stracciatella", "Cioccolato", "Limone", "Pino Pinguino", "Pura Vida", "La Bella Siciliana",
                     "Ciak Si Gira", "Etna"];
