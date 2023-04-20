@@ -9,9 +9,9 @@ function createContent() {
     const hoursContainer = content.appendChild(createTypeElementWithId("div", "hoursContainer"));
     const contactsContainer = content.appendChild(createTypeElementWithId("div", "contactsContainer"));
     
-    //const firstImg = new Image();
-    //firstImg.src = firstImage;
-    //homeContainer.appendChild(firstImg);
+    const firstImg = new Image();
+    firstImg.src = firstImage;
+    homeContainer.appendChild(firstImg);
     
     //homeContainer.setAttribute("class", "parallax");
     //const parallaxContainer = createTypeElementWithId("div", "parallaxContainer");

@@ -23,8 +23,8 @@ html {
 
 #header {
     border: solid;
+    color: rgb(255, 255, 255);
     background-color: black;
-    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -45,11 +45,14 @@ html {
     flex-wrap: wrap;
     height: fit-content;
     width: 100vw;
+/* ------------------*/
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;    
 }
 
 #homeContainer {
     border: orange solid;
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,42 +61,53 @@ html {
 }
 
 #homeContainer > img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 #homeContainer > div {
-    border: solid;
+    border: solid white;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     height: fit-content;
     width: fit-content;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
-    background-color: black;
+/*---------------------*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
 }
 
 #homeContainer > div > h1 {
-    color: #f472b6;
+    color: #000000;
+    border: solid yellow;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 5em;
+    font-size: 6em;
     margin-bottom: 6%;
     font-weight: 400;
 }
 
 #homeContainer > div > p {
-    color: white;
+    color: rgb(0, 0, 0);
+    border: solid red;
     height: fit-content;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-align: center;
     word-spacing: 5px;
     font-weight: 100;
