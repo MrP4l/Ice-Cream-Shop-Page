@@ -22,7 +22,7 @@ function createContent() {
     shopDesc.textContent = "A little tradition, a pinch of love and a drop of innovation " + 
                             "that will never make you forget our ice cream";
     textContainer.appendChild(shopDesc);
-    
+
     const aboutSubContainer = createTypeElementWithId("div", "aboutSubContainer");
     aboutContainer.appendChild(aboutSubContainer);
     const aboutTitle = createTypeElementWithId("h2", "aboutTitle");
@@ -35,7 +35,7 @@ function createContent() {
                         "tradition and modernity, bringing innovation to the cone every year."
     aboutSubContainer.appendChild(aboutUs);
 
-    const titleRow = createTypeElementWithId("div", "titleRow");
+    const titleRow = createTypeElementWithId("h2", "titleRow");
     titleRow.textContent = "(some of) The Ice Creams"
     const secondRowMenuContainer = createTypeElementWithId("div", "secondRow");
     menuContainer.appendChild(titleRow);
@@ -53,12 +53,7 @@ function createContent() {
     for (let i = 0; i < 8; i++) {
         const div = document.createElement("div");
         div.setAttribute("id", "card" + i);
-        //if (i < 4) {
-        //    firstRowMenuContainer.appendChild(div);
-        //}
-        //else {
             secondRowMenuContainer.appendChild(div);
-        //}
         const titles = document.createElement("h2");
         div.appendChild(titles);
         const descr = document.createElement("p");
@@ -67,7 +62,6 @@ function createContent() {
         descr.textContent = descrArray[i];
     }
 
-    //Make a container for a section title h1/div and openingHoursContainer
     const hoursArray = ["Opening Hours | March - October", "Monday 14.00 - 24.00", "Tuesday 14.00 - 24.00", 
                     "Wednesday 14.00 - 24.00", "Thursday 14.00 - 24.00", "Friday 14.00 - 24.00", "Saturday 12.00 - 24.00",
                     "Sunday 12.00 - 24.00"]
@@ -85,7 +79,6 @@ function createContent() {
         div.textContent = hoursArray[i];
     }
 
-    //Make a container for a section title h1/div and contacts
     const contactsArray = ["Ancona, Via FraMa 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"];
     const contactsSubContainer = createTypeElementWithId("div", "contactsSubContainer");
     const titleContactContainer = createTypeElementWithId("h2", "titleContactContainer");

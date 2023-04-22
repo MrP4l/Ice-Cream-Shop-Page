@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
@@ -10,6 +12,10 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+h2 {
+    font-family: "Asap", sans-serif;
 }
 
 #mainContainer {
@@ -25,14 +31,18 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 5%;
+    align-items: center;
+    height: fit-content;
     width: 100%;
     font-weight: 300;
+    font-family: "Asap", sans-serif;
+    font-size: 15px;
 }
 
 #header > div {
     margin: 10px;
     padding: 10px;
+    height: fit-content;
     cursor: pointer;
 }
 
@@ -54,6 +64,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     width: 100%;
 }
@@ -76,8 +87,7 @@ html {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%;
-    z-index: -1;
+    height: fit-content;
 }
 
 #homeContainer > div > h1 {
@@ -86,18 +96,19 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 7em;
+    font-size: 7rem;
     margin-bottom: 6%;
     font-weight: 400;
+    font-family: "Asap", sans-serif;
 }
 
 #homeContainer > div > p {
     height: fit-content;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.7rem;
     text-align: center;
     word-spacing: 5px;
     font-weight: 100;
@@ -137,7 +148,7 @@ html {
     height: fit-content;
     width: fit-content;
     width: 30%;    
-    font-size: 1.5em;
+    font-size: clamp(25px, 1.5em, 20px);
     text-align: center;
     word-spacing: 5px;
     font-weight: 100;
@@ -165,6 +176,7 @@ html {
     font-weight: 300;
     text-align: center;
     align-items: center;
+    font-family: "Asap", sans-serif;
 }
 
 #secondRow {
@@ -329,14 +341,73 @@ html {
     transform: rotate(360deg) scale(1.2);
 }
 */
+@media screen and (max-width: 768px) {
+    #header {
+      font-size: 12px;
+    }
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
+    #homeContainer > div > h1 {
+        font-size: 5rem;
+    }
+
+    #homeContainer > div > p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    #aboutContainer {
+        align-items: center;
+    }
+
+    #aboutContainer > div > h2 {
+        font-size: 2.7em;
+    }
+
+    #aboutContainer > div > p {
+        width: 80%;    
+    }
+
+    #menuContainer {
+        height: fit-content;
+    }
+
+   #titleRow {
+        margin-bottom: 5vh;
+        font-size: 2.7em;
+   }
+   
+   #titleHourContainer {
+        font-size: 2.7em;
+   }
+
+   #titleContactContainer {
+        font-size: 2.7em;
+   }
   }
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
+
+@media screen and (max-width: 425px) {
+    #header {
+      font-size: 12px;
+    }
+
+    #homeContainer > div > h1 {
+        font-size: 5rem;
+    }
+
+    #homeContainer > div > p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    #aboutContainer {
+        align-items: center;
+    }
+
+    #aboutContainer > div > p {
+        width: 80%;    
+    }
+
+    #menuContainer {
+        height: fit-content;
+    }
   }
