@@ -390,14 +390,12 @@ h2 {
 }
 
 #homeContainer {
-    background-image: url("img_tree.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     border: solid red;
 }
 
 #homeContainer > img {
-    background-image: url("img_tree.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
