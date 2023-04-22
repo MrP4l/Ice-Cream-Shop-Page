@@ -385,11 +385,11 @@ h2 {
    }
 
    #contentContainer {
-    overflow-y: none; 
+        overflow-y: none; 
 }
 
-#homeContainer > img {
-    height: 100vh;
+   #homeContainer > img {
+        height: 100vh;
 }
   }
 
