@@ -8,7 +8,7 @@ function scrollFromTo(from, to) {
 });
 }
 
-const effects = () => {
+function scrollFromToEffect() {
     scrollFromTo("home", "homeContainer");
     scrollFromTo("about", "aboutContainer");
     scrollFromTo("flavors", "menuContainer");
@@ -16,4 +16,4 @@ const effects = () => {
     scrollFromTo("contacts", "contactsContainer");
 }
 
-export default effects;
+export default scrollFromToEffect;
