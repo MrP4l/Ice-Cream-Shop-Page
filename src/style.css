@@ -385,19 +385,11 @@ h2 {
    }
 
    #contentContainer {
-    overflow-x: hidden;
-    overflow-y: visible; 
-}
-
-#homeContainer {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: solid red;
+    overflow-y: none; 
 }
 
 #homeContainer > img {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
 }
   }
 
