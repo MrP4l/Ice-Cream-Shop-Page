@@ -383,6 +383,11 @@ h2 {
    #titleContactContainer {
         font-size: 2.7em;
    }
+
+   #contentContainer {
+    overflow-x: hidden;
+    overflow-y: visible; 
+}
   }
 
 @media screen and (max-width: 425px) {
