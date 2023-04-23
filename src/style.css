@@ -121,7 +121,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 7rem;
+    font-size: 7em;
     margin-bottom: 6%;
     font-weight: 400;
     font-family: "Asap", sans-serif;
@@ -133,7 +133,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     text-align: center;
     word-spacing: 5px;
     font-weight: 100;
@@ -207,13 +207,14 @@ h2 {
 
 #secondRow {
     height: 100%;
+    width: 100%;
 }
 
 #menuContainer > div > div {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    width: clamp(200px, 15%, 20%);
+    width: 15%;
     margin: 2%;
     text-align: center;
 }
@@ -228,7 +229,7 @@ h2 {
     word-spacing: 5px;
     font-weight: 300;
     margin-bottom: 8%;
-    font-size: clamp(5px, 2em, 2em);
+    font-size: 2em;
 }
 
 #menuContainer > div > div > p {
@@ -239,7 +240,7 @@ h2 {
     text-align: center;
     word-spacing: 5px;
     font-weight: 100;
-    font-size: clamp(1px, 1em, 1em);
+    font-size: 1em;
 }
 
 #hoursContainer {
@@ -370,7 +371,7 @@ h2 {
 
 @media screen and (min-width: 2560px) {
     #header {
-      font-size: 27px;
+      font-size: 33px;
     }
 
     #homeContainer > div > h1 {
@@ -382,40 +383,40 @@ h2 {
     }
 
     #aboutContainer > div > h2 {
-        font-size: 4em;
+        font-size: 5em;
     }
 
     #aboutContainer > div > p {
         width: 60%;   
-        font-size: 2.5em; 
+        font-size: 3em; 
     }
 
     #titleRow {
-        font-size: 4em;
-   }
+        font-size: 5em;
+    }
 
-   #menuContainer > div > div > h2 {
-        font-size: 2.5em;
+    #menuContainer > div > div > h2 {
+        font-size: 3em;
     }
 
     #menuContainer > div > div > p {
-        font-size: 1.8em;
+        font-size: 2em;
     }
    
    #titleHourContainer {
-        font-size: 4em;
+        font-size: 5em;
    }
 
    #hoursContainer > div > div > p {   
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     #contactsContainer > div > h2 {
-        font-size: 4em;
+        font-size: 5em;
     }
     
     #contactsContainer > div > div > p {   
-        font-size: 2.5em;
+        font-size: 3em;
     }
 }
 
@@ -425,11 +426,11 @@ h2 {
     }
 
     #homeContainer > div > h1 {
-        font-size: 5rem;
+        font-size: 5em;
     }
 
     #homeContainer > div > p {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         width: 80%;
     }
 
@@ -486,15 +487,15 @@ h2 {
 
     #textContainer.inv {
         opacity: 0;
-        margin-top: 100px;
+        margin-top: 800px;
     }
 
     #homeContainer > div > h1 {
-        font-size: 5rem;
+        font-size: 5em;
     }
 
     #homeContainer > div > p {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         width: 80%;
     }
 
