@@ -5,7 +5,9 @@ Project started with the aim of learning to use Webpack, in progress I thought o
 ----
 TODO:
 - Add some transitions on scroll
+
 ----
 Credit for the Image: Erwan Hesry - @ErwanHesry - https://unsplash.com/it/@erwanhesry
+
 ----
 Inspired by The Odin Project - https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
