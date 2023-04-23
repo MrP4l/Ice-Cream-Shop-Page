@@ -213,7 +213,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    width: 15%;
+    width: clamp(200px, 15%, 20%);
     margin: 2%;
     text-align: center;
 }
