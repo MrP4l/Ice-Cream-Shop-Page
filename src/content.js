@@ -16,7 +16,7 @@ function createContent() {
     const textContainer = createTypeElementWithId("div", "textContainer");
     homeContainer.appendChild(textContainer);
     const shopName = createTypeElementWithId("h1", "shopName");
-    shopName.textContent = "FraMa";
+    shopName.textContent = "Frama";
     textContainer.appendChild(shopName);
     const shopDesc = createTypeElementWithId("p", "shopDesc")
     shopDesc.textContent = "A little tradition, a pinch of love and a drop of innovation " + 
@@ -30,7 +30,7 @@ function createContent() {
     aboutSubContainer.appendChild(aboutTitle);
     const aboutUs = createTypeElementWithId("p", "aboutUs");
     aboutUs.textContent = "From an ancient fourth generation family of ice cream makers from Germany " + 
-                        "who settled first in Zoldo Alto and then in Ancona, owners of the historic " + 
+                        "who settled first in Obereggen and then in Ancona, owners of the historic " + 
                         "and oldest ice cream shop in Ancona. Come and try our ice cream that mixes " + 
                         "tradition and modernity, bringing innovation to the cone every year."
     aboutSubContainer.appendChild(aboutUs);
@@ -79,7 +79,7 @@ function createContent() {
         div.textContent = hoursArray[i];
     }
 
-    const contactsArray = ["Ancona, Via FraMa 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"];
+    const contactsArray = ["Ancona, Via Frama 2301", "3963352411", "lfJob@gmail.com", "GitHub - MrP4l"];
     const contactsSubContainer = createTypeElementWithId("div", "contactsSubContainer");
     const titleContactContainer = createTypeElementWithId("h2", "titleContactContainer");
     contactsSubContainer.appendChild(titleContactContainer);

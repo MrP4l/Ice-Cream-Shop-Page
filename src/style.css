@@ -39,12 +39,14 @@ h2 {
     font-size: 15px;
 }
 
-#header.onScroll {
-    transition: opacity 0.2s;   
-    opacity: 0;
+#header > div {
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    cursor: pointer;
 }
 
-#header > div {
+#header > i {
     margin: 10px;
     padding: 10px;
     height: fit-content;
@@ -53,6 +55,24 @@ h2 {
 
 #header > div:hover {
     color: white;
+}
+
+#header.onScroll {
+    transition: opacity 0.2s;   
+    opacity: 0;
+}
+
+#header.hamburgerHeader {
+    height: fit-content;
+    width: fit-content;
+}
+
+#header.hamburgerHeader > div{
+    width: 100%;
+}
+
+#header.hamburgerHeader > i{
+    width: 100%;
 }
 
 #contentContainer {
@@ -347,6 +367,58 @@ h2 {
     transform: rotate(360deg) scale(1.2);
 }
 */
+
+@media screen and (min-width: 2560px) {
+    #header {
+      font-size: 27px;
+    }
+
+    #homeContainer > div > h1 {
+        font-size: 11em;
+    }
+    
+    #homeContainer > div > p {
+        font-size: 3em;
+    }
+
+    #aboutContainer > div > h2 {
+        font-size: 4em;
+    }
+
+    #aboutContainer > div > p {
+        width: 60%;   
+        font-size: 2.5em; 
+    }
+
+    #titleRow {
+        font-size: 4em;
+   }
+
+   #menuContainer > div > div > h2 {
+        font-size: 2.5em;
+    }
+
+    #menuContainer > div > div > p {
+        font-size: 1.8em;
+    }
+   
+   #titleHourContainer {
+        font-size: 4em;
+   }
+
+   #hoursContainer > div > div > p {   
+        font-size: 2.5em;
+    }
+
+    #contactsContainer > div > h2 {
+        font-size: 4em;
+    }
+    
+    #contactsContainer > div > div > p {   
+        font-size: 2.5em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #header {
       font-size: 12px;
@@ -399,9 +471,22 @@ h2 {
 }
   }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {   
+
     #header {
-      font-size: 12px;
+      font-size: 16px;
+      text-align: center;
+      position: absolute;
+    }
+
+    #header.close {
+        height: 65px;
+        overflow: hidden;
+    }
+
+    #textContainer.inv {
+        opacity: 0;
+        margin-top: 100px;
     }
 
     #homeContainer > div > h1 {

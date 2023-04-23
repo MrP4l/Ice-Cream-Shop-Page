@@ -7,7 +7,7 @@ function observerForHeader() {
           header.classList.remove("onScroll");
 
         } else {
-          header.setAttribute("class", "onScroll");
+          header.classList.add("onScroll");
         }
       });
     }, {threshold: 1});
